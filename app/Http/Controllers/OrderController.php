@@ -77,7 +77,7 @@ class OrderController extends Controller
         $tiket->save();
 
         // Redirect pengguna ke halaman yang sesuai setelah pembuatan pesanan
-        return redirect()->route('home.user')->with('success', 'Pesanan tiket berhasil dibuat.');
+        return redirect()->route('transaksi')->with('success', 'Pesanan tiket berhasil dibuat.');
     }
 
 

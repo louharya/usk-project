@@ -23,7 +23,9 @@
                                     <form method="POST" action="{{ route('update-role', $user->id) }}">
                                         @csrf
                                         @method('PUT')
-                                        <button type="submit" class="text-blue-600 hover:text-blue-900">Ubah</button>
+                                        <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                            Verifikasi
+                                        </button>
                                     </form>
                                 </td>
                             </tr>

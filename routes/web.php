@@ -40,6 +40,8 @@ Route::middleware('auth')->group(function () {
 Route::middleware('auth', 'Admin')->group(function () {
     Route::get('/homeAdmin', [DefaultController::class, 'index'])->name('admin.index');
     Route::put('/users/{id}/update-role', [DefaultController::class, 'updateRole'])->name('update-role');
+    Route::get('/reportAdmin', [LaporanController::class, 'konfirmasi'])->name('reportAdmin');
+    Route::put('/orders/{orderId}/mark-as-success', [LaporanController::class, 'markAsSuccess'])->name('orders.markAsSuccess');
 });
 
 Route::middleware('auth', 'Maskapai')->group(function () {

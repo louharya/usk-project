@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('email');
             $table->integer('jumlah_kursi');
             $table->integer('total_harga');
-            $table->string('status')->default('succes');
+            $table->string('status')->default('pending');
             $table->timestamps();
 
             $table->foreign('id_tiket')->references('id')->on('tikets')->onDelete('cascade');
